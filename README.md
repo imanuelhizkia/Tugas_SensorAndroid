@@ -1,63 +1,62 @@
-# Sensor Android App
+# Aplikasi Sensor Android
 
-A comprehensive Android application built using Java that demonstrates the integration of multiple hardware sensors in a single project. The application utilizes the Camera, GPS Location services, and the Ambient Temperature sensor.
+Aplikasi Android berbasis Java yang menunjukkan integrasi beberapa sensor perangkat dalam satu proyek. Aplikasi ini menggunakan fitur kamera, layanan lokasi GPS, dan sensor suhu lingkungan.
 
-## Features
+## Fitur Utama
 
-* Camera Integration
-  * Capture photos using the system camera.
-  * Uses the modern Activity Result API (TakePicturePreview contract).
-  * Displays the captured image inside an ImageView on the screen.
+### 1. Integrasi Kamera
+- Mengambil foto menggunakan kamera perangkat.
+- Menggunakan Activity Result API (TakePicturePreview).
+- Menampilkan hasil foto langsung pada ImageView di aplikasi.
 
-* GPS and Location Tracking
-  * Fetches real-time latitude, longitude, and provider info.
-  * Uses FusedLocationProviderClient for optimal battery and accuracy.
-  * Identifies the current status of the device GPS (Enabled or Disabled).
+### 2. Pelacakan Lokasi GPS
+- Mengambil data latitude, longitude, dan provider secara real-time.
+- Menggunakan FusedLocationProviderClient untuk akurasi dan efisiensi daya.
+- Menampilkan status GPS (aktif atau tidak aktif).
 
-* Ambient Temperature Sensor
-  * Monitors the surrounding ambient temperature in real time.
-  * Displays real-time Celsius temperature values on a TextView.
-  * Safely handles devices lacking an ambient temperature sensor with a fallback message.
+### 3. Sensor Suhu Lingkungan
+- Memantau suhu lingkungan secara real-time.
+- Menampilkan nilai suhu dalam satuan Celsius pada tampilan aplikasi.
+- Menyediakan fallback jika perangkat tidak mendukung sensor suhu.
 
-* User Interface
-  * Built using XML layout and ConstraintLayout.
-  * Organizes sensor functions inside MaterialCardView elements.
-  * Features a clean, responsive vertical scroll layout for accessibility.
+### 4. Antarmuka Pengguna
+- Dibangun menggunakan XML dengan ConstraintLayout.
+- Menggunakan MaterialCardView untuk mengelompokkan fitur sensor.
+- Tampilan scroll vertikal yang sederhana dan mudah digunakan.
 
-## Tech Stack
+## Teknologi yang Digunakan
 
-* Programming Language: Java
-* UI Layout: XML
-* Minimum SDK: API 24 (Android 7.0)
-* Target SDK: API 36 (Android 15)
-* Dependency Injection and Version Catalog: gradle/libs.versions.toml
-* Core Libraries:
-  * AndroidX AppCompat
-  * Material Components for Android
-  * Google Play Services Location
+- Bahasa Pemrograman: Java
+- UI: XML (Android Views)
+- Minimum SDK: API 24 (Android 7.0)
+- Target SDK: API 36 (Android 15)
+- Manajemen Dependency: Gradle Version Catalog (libs.versions.toml)
+- Library Utama:
+  - AndroidX AppCompat
+  - Material Components
+  - Google Play Services Location
 
-## File Map
+## Struktur Proyek
 
-* Main logic: [MainActivity.java](file:///C:/Users/ASUS/AndroidStudioProjects/SensorAndroid/app/src/main/java/com/example/sensorandroid/MainActivity.java)
-* UI Layout: [activity_main.xml](file:///C:/Users/ASUS/AndroidStudioProjects/SensorAndroid/app/src/main/res/layout/activity_main.xml)
-* Permissions and Manifest: [AndroidManifest.xml](file:///C:/Users/ASUS/AndroidStudioProjects/SensorAndroid/app/src/main/AndroidManifest.xml)
-* Version Catalog: [libs.versions.toml](file:///C:/Users/ASUS/AndroidStudioProjects/SensorAndroid/gradle/libs.versions.toml)
+- Logika utama: MainActivity.java
+- Layout UI: activity_main.xml
+- Konfigurasi izin dan manifest: AndroidManifest.xml
+- Manajemen dependency: libs.versions.toml
 
-## Setup Instructions
+## Cara Menjalankan
 
-1. Clone or download the repository to your local machine.
-2. Open Android Studio (version Hedgehog or newer recommended).
-3. Select "Open" and navigate to the project directory SensorAndroid.
-4. Allow Android Studio to sync the project with Gradle files. This process automatically downloads the required dependencies including play-services-location.
+1. Clone atau unduh proyek ini.
+2. Buka menggunakan Android Studio (versi Hedgehog atau lebih baru).
+3. Tunggu proses sinkronisasi Gradle selesai.
+4. Pastikan semua dependency berhasil diunduh otomatis.
 
-## How to Run in Android Studio
+## Menjalankan Aplikasi
 
-1. Connect a physical Android device via USB debugging or start a Virtual Device (Emulator).
-2. Note that some sensors like the ambient temperature sensor are typically only available on specific physical devices.
-3. If using an Emulator, you can simulate coordinates via the Extended Controls (Location tab) and simulate temperature values via Virtual Sensors (Additional Sensors tab).
-4. Click the "Run" button (green play icon) in the Android Studio toolbar or press Shift + F10.
-5. Grant the runtime camera and location permissions when prompted by the app to start using the features.
+1. Hubungkan perangkat Android melalui USB debugging atau gunakan emulator.
+2. Berikan izin kamera dan lokasi saat diminta oleh aplikasi.
+3. Klik tombol Run di Android Studio atau tekan Shift + F10.
+4. Catatan: Sensor suhu lingkungan mungkin tidak tersedia di semua perangkat. Emulator dapat digunakan untuk simulasi lokasi dan sensor.
 
-## Author
+## Pembuat
 
-* Senior Android Developer
+- Pengembang Android Senior
