@@ -57,6 +57,7 @@ Aplikasi Android berbasis Java yang menunjukkan integrasi beberapa sensor perang
 3. Klik tombol Run di Android Studio atau tekan Shift + F10.
 4. Catatan: Sensor suhu lingkungan mungkin tidak tersedia di semua perangkat. Emulator dapat digunakan untuk simulasi lokasi dan sensor.
 
-## Pembuat
 
-- Pengembang Android Senior
+---
+**Dosen Pengampu:** Dr. Sopian Alviana, S.Kom., M.Kom  
+**Mata Kuliah:** Pemrograman Android  
